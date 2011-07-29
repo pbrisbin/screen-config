@@ -1,0 +1,5 @@
+# example: screen -t [name] [command]
+#sessionname clean
+screen -t bash $SHELL
+screen -t bash $SHELL
+screen -t bash $SHELL
