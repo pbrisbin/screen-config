@@ -8,7 +8,7 @@ attrcolor b ".I"
 autodetach on
 bell_msg '^Gbell in window %n...'
 bufferfile "$HOME/.screen/exchange"
-deflogin on
+#deflogin on
 defbce on
 defflow off
 defscrollback 5000
