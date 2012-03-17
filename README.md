@@ -8,4 +8,4 @@ This is my screen configuration. It implements the design outlined
 ### Usage
 
 1. Clone the repo into `~/.screen`
-2. Source `bashrc.screen` from your main `.bashrc`
+2. Source `screen.sh` from your shell rc file (e.g. `.bashrc`)
