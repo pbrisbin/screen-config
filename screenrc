@@ -15,7 +15,7 @@ encoding UTF-8
 hardcopydir "$HOME/.screen/hardcopy"
 nonblock on
 setenv LC_CTYPE en_US.UTF-8
-shelltitle '/ |bash'
+shelltitle '/ |zsh'
 startup_message off
 term xterm-256color
 vbell off
@@ -51,7 +51,7 @@ bind K kill
 bind } history
 
 # find the nearest shell
-bind s select bash 
+bind s select zsh
 
 # make scroll work
 termcapinfo rxvt-256color ti@:te@
