@@ -1,7 +1,5 @@
 # screenrc
 
-shell /bin/bash
-
 # main options
 altscreen on
 attrcolor b ".I"
