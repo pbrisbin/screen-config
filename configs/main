@@ -1,5 +1,0 @@
-# example: screen -t [name] [command]
-#sessionname main
-screen -t mail mutt
-screen -t music ncmpcpp
-#screen -t calendar wyrd
