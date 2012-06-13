@@ -9,32 +9,23 @@ bufferfile "$HOME/.screen/exchange"
 deflogin on
 defbce on
 defflow off
-defscrollback 5000
+defscrollback 50000
 defutf8 on
 encoding UTF-8
 hardcopydir "$HOME/.screen/hardcopy"
 nonblock on
 setenv LC_CTYPE en_US.UTF-8
-shelltitle '/ |zsh'
+#shelltitle '/ |zsh'
 startup_message off
 term xterm-256color
 vbell off
 
 # display settings
-sorendition '= dY'
-hardstatus alwayslastline '%{= B}//%{= W}%H%{= B}/%{= W}%n%{= B}/%{= W}%t %= %{= B}//%{= W}%d %M %C%{= B}//'
-
-# special xterm hardstatus: use the window title.
-#termcapinfo xterm-256color 'hs:ts=\E]2;:fs=\007:ds=\E]2;screen\007'
-#hardstatus string "[screen %n%?: %t%?] %h"
+sorendition '= W'
+hardstatus alwayslastline '%{= kK} %{= G}[%{= W}%H%{= G}] %= %{= K}%-w%{= G}[%{= W}%n %t%{= G}]%{= K}%+w '
 
 # open environment-specific apps
 source "$SCREEN_CONF_DIR/$SCREEN_CONF"
-
-# always open some terms
-screen
-screen
-screen
 select 0
 
 # keybindings
@@ -49,13 +40,6 @@ bind ^\
 bind Q quit
 bind K kill
 bind } history
-
-# find the nearest shell
-bind s select zsh
-
-# make scroll work
-termcapinfo rxvt-256color ti@:te@
-termcapinfo xterm-256color ti@:te@
 
 # make colors work
 termcapinfo xterm-256color 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
