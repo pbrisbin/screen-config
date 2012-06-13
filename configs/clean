@@ -1,5 +1,3 @@
-# example: screen -t [name] [command]
-#sessionname clean
 screen -t zsh $SHELL
 screen -t zsh $SHELL
 screen -t zsh $SHELL

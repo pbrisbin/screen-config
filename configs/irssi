@@ -1,3 +1,1 @@
-# example screen -t [name] [command]
-#sessionname irssi
 screen -t irc irssi
