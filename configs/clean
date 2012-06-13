@@ -1,3 +1,4 @@
 screen -t zsh $SHELL
 screen -t zsh $SHELL
 screen -t zsh $SHELL
+select 0

@@ -26,7 +26,6 @@ hardstatus alwayslastline '%{= kK} %{= G}[%{= W}%H%{= G}] %= %{= K}%-w%{= G}[%{=
 
 # open environment-specific apps
 source "$SCREEN_CONF_DIR/$SCREEN_CONF"
-select 0
 
 # keybindings
 bindkey -k F2 next
