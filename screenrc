@@ -1,45 +1,23 @@
 # screenrc
 
-# main options
+# options
 altscreen on
 attrcolor b ".I"
-autodetach on
 bell_msg '^Gbell in window %n...'
-bufferfile "$HOME/.screen/exchange"
-deflogin on
 defbce on
 defflow off
-defscrollback 50000
+deflogin on
 defutf8 on
-encoding UTF-8
+defencoding UTF-8
 hardcopydir "$HOME/.screen/hardcopy"
-nonblock on
-setenv LC_CTYPE en_US.UTF-8
-#shelltitle '/ |zsh'
+hardstatus alwayslastline '%{= kK} %{= G}[%{= W}%H%{= G}] %= %{= K}%-w%{= G}[%{= W}%n %t%{= G}]%{= K}%+w '
+sorendition '= W'
 startup_message off
 term xterm-256color
-vbell off
 
-# display settings
-sorendition '= W'
-hardstatus alwayslastline '%{= kK} %{= G}[%{= W}%H%{= G}] %= %{= K}%-w%{= G}[%{= W}%n %t%{= G}]%{= K}%+w '
-
-# open environment-specific apps
-source "$SCREEN_CONF_DIR/$SCREEN_CONF"
-
-# keybindings
-bindkey -k F2 next
-bindkey -k F1 prev
-
-# remove some stupid / dangerous key bindings
-bind ^k
+# bindings
 bind ^\
+bind ^q quit
 
-# make them better
-bind Q quit
-bind K kill
-bind } history
-
-# make colors work
-termcapinfo xterm-256color 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
-termcapinfo rxvt-256color 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+# see: http://pbrisbin.com/posts/screen_tricks
+source "$SCREEN_CONF_DIR/$SCREEN_CONF"
