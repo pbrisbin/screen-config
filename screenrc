@@ -14,6 +14,7 @@ hardstatus alwayslastline '%{= kK} %{= G}[%{= W}%H%{= G}] %= %{= K}%-w%{= G}[%{=
 sorendition '= W'
 startup_message off
 term xterm-256color
+vbell off
 
 # bindings
 bind ^\
